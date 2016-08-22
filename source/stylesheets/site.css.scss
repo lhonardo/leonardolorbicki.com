@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "_normalize";
+@import "bootstrap.css";
+
+body {
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.logo img {
+  height: 18.75em;
+  margin-top: 6em;
+}
+
+h1 {
+  color: rgba(0,0,0,0.5);
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+aside{
+  ul{
+    padding: 0;
+    font-size: 3em;
+    li{
+      list-style: none;
+    }
+  }
+}
+
+#main{
+  min-height: 500px;
+}
+
+.site-nav ul{
+
+  font-size: 2em;
+  list-style: none;
+  padding: 20px;
+  li{
+    display: inline;
+    padding: 20px;
+    a{
+      color: black;
+    }
+  }
+}
+
+.icons{
+  font-size: 2em;
+  overflow: hidden;
+  margin: 50px 0;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto;
+  a{
+    color: black;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  i{
+    background: url('/images/icons.png');
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  .facebook{
+    background-position: 0 -102px;
+  }
+
+  .linkedin{
+    background-position: 0 -202px;
+  }
+
+  .youtube{
+    background-position: 0 -307px;
+  }
+}
+footer{
+  width: 100%;
+  font-size: 2em;
+  color: black;
+  i{
+    margin-right: 10px;
+    color: black;
+
+  }
+}

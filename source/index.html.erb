@@ -1,0 +1,21 @@
+<div>
+  <h1>Leonardo Lorbicki</h1>
+
+  </p>
+  <div class="icons">
+    <p>See me on:</p>
+    <div class="col-md-3"><a href="https://github.com/lorbicki"><i class="github"></i><p>GitHub</p></a></div>
+    <div class="col-md-3"><a href="https://facebook.com/rsleo"><i class="facebook"></i><p>Facebook</p></a></div>
+    <div class="col-md-3"><a href="https://br.linkedin.com/in/rsleo"><i class="linkedin"></i><p>Linkedin</p></a></div>
+    <div class="col-md-3"><a href="https://www.youtube.com/channel/UCULrT9m3r694iEOHvJNGVxQ"><i class="youtube"></i><p>Some videos</p></a></div>
+  </div>
+</div>
+
+<aside>
+  <h2>Recent Posts</h2>
+  <ul>
+    <% blog.articles[0...3].each do |article| %>
+      <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+    <% end %>
+  </ul>
+</aside>
